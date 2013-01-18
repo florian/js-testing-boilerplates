@@ -16,6 +16,12 @@ Each boilerplate folder contains a Makefile with these tasks:
 - `make update-testing`: Updates the node packages and / or the git submodules.
 - `make test`: Run the test suite, with the framework's command line tool or grunt + PhantomJS.
 
+The folders also contain [grunt](https://github.com/gruntjs/grunt) files, so you can easily re-run the tests when files change.
+
+```sh
+$ grunt watch
+```
+
 ## Usage
 
 ```sh
