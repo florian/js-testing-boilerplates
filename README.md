@@ -31,4 +31,4 @@ $ cp -r ../js-testing-boilerplates/mocha-chai/* .
 $ make init-testing
 ```
 
-This will overwrite existing `Makefile`, `.gitmodules` files and the `spec` directory.
+This will overwrite existing `Makefile`, `grunt.js`, `.gitmodules` files and the `spec` directory.
