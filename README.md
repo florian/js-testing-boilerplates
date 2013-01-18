@@ -22,6 +22,7 @@ Each boilerplate folder contains a Makefile with these tasks:
 $ git clone https://github.com/js-coder/js-testing-boilerplates.git
 $ cd yourProject # A git repo
 $ cp -r ../js-testing-boilerplates/mocha-chai/* .
+$ make init-testing
 ```
 
 This will overwrite existing `Makefile`, `.gitmodules` files and the `spec` directory.
