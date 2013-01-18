@@ -9,3 +9,4 @@ init-testing:
 
 update-testing:
 	git submodule update
+	npm install
