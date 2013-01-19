@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Jasmine Spec Runner</title>
+
+  <link rel="shortcut icon" type="image/png" href="vendor/jasmine/images/jasmine/jasmine_favicon.png">
+  <link rel="stylesheet" type="text/css" href="vendor/jasmine/lib/jasmine-core/jasmine.css">
+  <script type="text/javascript" src="vendor/jasmine/lib/jasmine-core/jasmine.js"></script>
+  <script type="text/javascript" src="vendor/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+  <script type="text/javascript" src="vendor/jasmine/lib/jasmine-core/jasmine-jquery.js"></script>
+  <script type="text/javascript" src="vendor/jasmine-event-spy/jasmine_matcher_extensions.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript">jasmine.getFixtures().fixturesPath = 'fixtures';</script>
+
+  <script src="TODO"></script> <!-- Include source -->
+  <script src="spec.js"></script>
+
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var trivialReporter = new jasmine.TrivialReporter();
+
+      jasmineEnv.addReporter(trivialReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return trivialReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>
