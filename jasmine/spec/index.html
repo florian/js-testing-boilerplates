@@ -8,10 +8,6 @@
   <link rel="stylesheet" type="text/css" href="vendor/jasmine/lib/jasmine-core/jasmine.css">
   <script type="text/javascript" src="vendor/jasmine/lib/jasmine-core/jasmine.js"></script>
   <script type="text/javascript" src="vendor/jasmine/lib/jasmine-core/jasmine-html.js"></script>
-  <script type="text/javascript" src="vendor/jasmine/lib/jasmine-core/jasmine-jquery.js"></script>
-  <script type="text/javascript" src="vendor/jasmine-event-spy/jasmine_matcher_extensions.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript">jasmine.getFixtures().fixturesPath = 'fixtures';</script>
 
   <script src="TODO"></script> <!-- Include source -->
   <script src="spec.js"></script>
@@ -35,13 +31,8 @@
         if (currentWindowOnload) {
           currentWindowOnload();
         }
-        execJasmine();
-      };
-
-      function execJasmine() {
         jasmineEnv.execute();
-      }
-
+      };
     })();
   </script>
 
