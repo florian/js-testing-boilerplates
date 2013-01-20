@@ -8,3 +8,5 @@ test-w:
 
 init-testing update-testing:
 	npm install
+
+.PHONY: test test-w init-testing update-testing

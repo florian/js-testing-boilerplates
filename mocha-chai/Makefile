@@ -10,3 +10,5 @@ init-testing:
 update-testing:
 	git submodule update
 	npm install
+
+.PHONY: test init-testing update-testing
