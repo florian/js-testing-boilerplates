@@ -1,0 +1,13 @@
+{
+	"name": "TODO",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"test": "grunt test"
+	},
+	"devDependencies": {
+		"grunt": "~0.3",
+		"should": "1.2",
+		"grunt-mocha": "~0.2"
+	}
+}
