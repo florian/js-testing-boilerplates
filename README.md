@@ -4,6 +4,15 @@ JavaScript testing frameworks require a lot of boilerplate. I grew tired of of h
 
 The different testing frameworks need different files, so I made a folder for each combination I used so far.
 
+## Usage
+
+```sh
+$ git clone https://github.com/js-coder/js-testing-boilerplates.git
+$ cd yourProject # A git repo
+$ cp -r ../js-testing-boilerplates/mocha-chai/* .
+$ make init-testing
+```
+
 ## Submodules / NPM
 
 All vendor files are added with git submodules or NPM, so you can easily update them.
@@ -22,17 +31,8 @@ The folders also contain [grunt](https://github.com/gruntjs/grunt) files, so you
 $ grunt watch
 ```
 
+`mocha-node-should` doesn't contain grunt, but a `make test-w` task.
+
 ## Travis
 
 Configuration for the [travis](https://travis-ci.org/) continuous integration service is on board too!
-
-## Usage
-
-```sh
-$ git clone https://github.com/js-coder/js-testing-boilerplates.git
-$ cd yourProject # A git repo
-$ cp -r ../js-testing-boilerplates/mocha-chai/* .
-$ make init-testing
-```
-
-This will overwrite existing `Makefile`, `grunt.js`, `.gitmodules`, `.travis.yml` files and the `spec` directory.
