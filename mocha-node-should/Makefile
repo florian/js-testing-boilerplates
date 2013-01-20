@@ -4,7 +4,7 @@ test:
 	mocha spec
 
 test-w:
-	mocha spec --watch
+	mocha --watch --growl --reporter min spec
 
 init-testing update-testing:
 	npm install
