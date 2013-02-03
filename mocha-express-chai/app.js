@@ -3,7 +3,7 @@ var express = require("express");
 var app = express();
  
 // Config
-app.configure('development', function() {
+app.configure(function() {
   app.set('port', 8000);
 });
 
