@@ -19,9 +19,15 @@ chai.use(chaiSupertest.httpAsserts);
 // global.sinon = require("sinon");
 // var sinonChai = require("sinon-chai");
 // chai.use(sinonChai);
+
+// use zombie.js as headless browser
+global.Browser = require('zombie');
  
 // force the test environment to 'test'
 process.env.NODE_ENV = 'test';
+
+// test coverage
+require('blanket');
 
 // get the application server module
 global.app = require('./../app');
@@ -29,5 +35,3 @@ global.app = require('./../app');
 // get the super-agent
 global.user = request(app).agent();
 
-// use zombie.js as headless browser
-global.Browser = require('zombie');

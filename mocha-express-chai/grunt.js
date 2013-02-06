@@ -6,22 +6,22 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     mochaTest: {
-      files: ['spec/**/*.spec.js']
+      files: ['test/**/*.test.js']
     },
     mochaTestConfig: {
       options: {
         reporter: 'dot',
-        require: 'spec/common'
+        require: 'test/common'
       }
     },
     watch: {
       test: {
-        files: ['spec/**/*.spec.js'],
+        files: ['test/**/*.js', 'app/**/*.js'],
         tasks: 'test'
       }
     }
   });
- 
+
   grunt.registerTask('test', 'mochaTest');
   grunt.registerTask('default', 'test');
 }
