@@ -24,6 +24,7 @@
         "chai": "*",
         "mocha": "*",
         "zombie": "*",
+        "phantom": "*",
         "chai-supertest": "*",
         "blanket": ">= 1.0.3"
     }

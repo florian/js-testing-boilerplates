@@ -22,6 +22,9 @@ chai.use(chaiSupertest.httpAsserts);
 
 // use zombie.js as headless browser
 global.Browser = require('zombie');
+
+// get the phantom
+global.phantom = require('phantom')
  
 // force the test environment to 'test'
 process.env.NODE_ENV = 'test';
@@ -34,4 +37,3 @@ global.app = require('./../app');
 
 // get the super-agent
 global.user = request(app).agent();
-
