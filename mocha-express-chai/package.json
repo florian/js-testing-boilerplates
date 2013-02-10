@@ -21,6 +21,7 @@
     "devDependencies": {
         "grunt": "*",
         "grunt-mocha-test": "*",
+        "grunt-exec": "*",
         "chai": "*",
         "mocha": "*",
         "zombie": "*",
